@@ -1,0 +1,76 @@
+<!doctype html>	
+<html>
+<head> <!--propiedades de la pagina web -->
+	<meta charset="utf-8"><!--codificacion sirve ortografia-->
+	<title>usando HTML Y CSS3</title><!--nombre pestaña en navegador-->
+	<meta name="keywords" content="html5, css3, responsive"><!--palabra clave para buscar pagina-->
+	<meta name="description" content="aprende a programar"><!--descripcion breve del sitio web para buscador-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> <!--link de google para usar fuente-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<header>
+		<div class="logo"><!--crear cuadro o div dentro de header-->
+			<img src="img/html5.jpg" alt="html5 web"><!--imagen de logo-->
+		</div>
+		<nav><!--ingresar botoneras-->
+			<ul><!--lista desordenada-->
+				<li><a href="index.html">HOME</a></li><!--botones con ruta donde llevar-->
+				<li><a href="servicios.html">SERVICIOS</a></li><!--botones-->
+				<li><a href="galeria.html">GALERIA</a></li><!--botones-->
+				<li><a href="contacto.html" class="activo">CONTACTO</a></li><!--botones-->
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<!--atributo action: indica a que archivo se van los datos
+			atributo method: indica de que tipo de metodo se usara para el envio.
+			GET:atravez de la URL
+			POST:valores ocultos-->
+		<form action="enviar-contacto.php" method="GET">
+			<fieldset><!--cuadro para apariencia-->
+				<legend>Formulario de Cotacto</legend>
+				<!--declarar tipo y nombre para texto, placeholder: texto de relleno, required:campo obligatorio-->
+				<input type="text" name="nombre" placeholder="Ingrese su nombre" required>
+				<input type="email" name="correo" placeholder="Ingrese su correo" required>
+				<input type="number" name="edad" placeholder="Ingrese su edad" required>
+				<input type="tel" name="telefono" placeholder="Ingrese su telefono" required>
+				<input type="date" name="fecha">
+				<div class="opciones-radio">
+					<input type="radio" name="opcion" value="1" checked>Opcion 1
+					<input type="radio" name="opcion" value="2">Opcion 2
+					<input type="radio" name="opcion" value="3">Opcion 3
+					<input type="radio" name="opcion" value="4">Opcion 4
+				</div>
+				<div class="opciones-checkbox">
+					<input type="checkbox" name="ocupacion" value="profesional" checked>Profesional
+					<input type="checkbox" name="ocupacion" value="estudiante">Estudiante
+					<input type="checkbox" name="ocupacion" value="egresado">Egresado
+				</div>
+				<select name="ciudad" id="">
+					<option value="">Selecione Ciudad</option>
+					<option value="ptomontt">Puerto Montt</option>
+					<option value="ptovaras">Puerto Varas</option>
+					<option value="osorno">Osorno</option>
+				</select>
+				<textarea name="mensaje" required placeholder="Escriba su mensaje"></textarea> 
+				<input type="submit" value="Enviar Datos">
+			</fieldset>
+		</form>
+		<div class="mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.575574649818!2d-72.93758488485378!3d-41.47011985968767!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96183a5096476959%3A0x111574e8bb4ebfd!2sEj%C3%A9rcito+200%2C+Puerto+Montt%2C+X+Regi%C3%B3n!5e0!3m2!1ses!2scl!4v1446590505218" width="600" height="450" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</section>
+	<footer>
+		<span class="pie-pagina">Siguenos en: 
+			<a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com"  target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://pinterest.com"  target="_blank"><i class="fa fa-pinterest-p"></i></a>
+			<a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i></a>
+			<!--target="_blank" abre link en pagina nueva-->
+		</span>
+	</footer>
+</body>
+</html>
