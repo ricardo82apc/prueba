@@ -1,0 +1,78 @@
+<!doctype html>	
+<html>
+<head> <!--propiedades de la pagina web -->
+	<meta charset="utf-8"><!--codificacion sirve ortografia-->
+	<title>usando HTML Y CSS3</title><!--nombre pestaña en navegador-->
+	<meta name="keywords" content="html5, css3, responsive"><!--palabra clave para buscar pagina-->
+	<meta name="description" content="aprende a programar"><!--descripcion breve del sitio web para buscador-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'> <!--link de google para usar fuente-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css"><!--llama a flexslider para galeria desde carpeta css-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script><!--llama archivo desde servidor en ruta-->
+	<script src="js/jquery.flexslider.js"></script><!--llama archivo js desde carpeta js-->
+	<script type="text/javascript" charset="utf-8">
+  		$(window).load(function() {$('.flexslider').flexslider({animation: "slide"});});
+  	</script><!--propiedades de imagenes-->
+  	<style type="text/css">
+		.flex-caption {
+  		width: 100%;
+  		padding: 2%;
+  		left: 0;
+  		bottom: 0;
+  		background: rgba(0,0,0,.5);
+  		color: #fff;
+  		text-shadow: 0 -1px 0 rgba(0,0,0,.3);
+  		font-size: 14px;
+  		line-height: 18px;
+		}
+	</style>	
+</head>
+<body>
+	<header>
+		<div class="logo"><!--crear cuadro o div dentro de header-->
+			<img src="img/html5.jpg" alt="html5 web"><!--imagen de logo-->
+		</div>
+		<nav><!--ingresar botoneras-->
+			<ul><!--lista desordenada-->
+				<li><a href="index.html">HOME</a></li><!--botones con ruta donde llevar-->
+				<li><a href="servicios.html">SERVICIOS</a></li><!--botones-->
+				<li><a href="galeria.html" class="activo">GALERIA</a></li><!--botones-->
+				<li><a href="contacto.html">CONTACTO</a></li><!--botones-->
+			</ul>
+		</nav>
+	</header>
+	<section><!--link video a mostrar-->
+			<div class="flexslider">
+  				<ul class="slides">
+    				<li>
+      					<img src="img/01.jpg" />
+      					<p class="flex-caption">bla bla bla</p>
+    				</li>
+    				<li>
+      					<img src="img/02.jpg" />
+      					<p class="flex-caption">ble ble ble</p>
+    				</li>
+    				<li>
+      					<img src="img/03.jpg" />
+      					<p class="flex-caption">bli bli bli</p>
+    				</li>
+    				<li>
+      					<img src="img/04.jpg" />
+      					<p class="flex-caption">blo blo blo</p>
+    				</li>
+  				</ul>
+			</div>
+	</section>
+	<footer>
+		<span class="pie-pagina">Siguenos en: 
+			<a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+			<a href="https://twitter.com"  target="_blank"><i class="fa fa-twitter"></i></a>
+			<a href="https://pinterest.com"  target="_blank"><i class="fa fa-pinterest-p"></i></a>
+			<a href="https://instagram.com"  target="_blank"><i class="fa fa-instagram"></i></a>
+			<!--target="_blank" abre link en pagina nueva-->
+		</span>
+	</footer>
+</body>
+</html>
